@@ -1,0 +1,111 @@
+.music {
+	background: url(../Images/FlowStateEP-Blur.jpg);
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.musicWrapper {
+	width: 95%;
+	margin: 0 auto;
+
+}
+
+.musicContent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+}
+
+.musicText, .albumArt {
+	width: 49%
+}
+
+.musicText {
+	padding-left: 10%;
+	color: white;
+	h2{
+		text-transform: uppercase;
+		font-family: 'Oswald', sans-serif;
+		transform: scaleY(1.4);
+		letter-spacing: 8px;
+		font-size: 50px;
+	}
+
+	ol {
+		counter-reset: item;
+		list-style-type: none;
+		padding: 0;
+	}
+
+	li {
+		padding: 20px 0;
+		font-family: 'Oswald', sans-serif;
+		display: block;
+		color: rgba(255,255,255,0.5);
+
+	}
+
+	li:before {
+		content: counter(item) " ";
+		counter-increment: item;
+	}
+
+	a {
+		padding: 20px;
+		text-decoration: none;
+		color: white;
+		font-family: 'Crimson Text', serif;
+		letter-spacing: 5px;
+		transition: all 1s;
+	}
+
+	a:hover {
+		color: #db7491;
+	}
+
+	li:hover {
+		list-style: none;
+	}
+}
+
+@media (max-width: 770px){
+	.musicContent{
+		flex-direction: column-reverse;
+		height: auto;
+		h2 {
+			font-size: 40px;
+			text-align: center;
+		}
+
+		ol li {
+			text-align: center;
+		}
+	}
+
+	.musicText, .albumArt{
+		width: 100%;
+		padding: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
