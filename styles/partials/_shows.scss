@@ -5,25 +5,24 @@
 }
 
 .shows {
-
-	// background: url(../Images/MountiansBW.jpg);
 	background-size: cover;
 	background-position: bottom;
+	padding: 50px 0;
 	.showsContent {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 50px 0;
+		padding-bottom: 30px
 	}
 }
 
 h1 {
-	font-family: 'Crimson Text', serif;
-	text-decoration: none;
-	color: black;
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-	// font-size: 13px;
+	font-weight: bold;
+	font-size: 22.5px;
 	transition: all 1s;
+	padding-left: 45px;
 }
 
 .row {
@@ -68,7 +67,7 @@ h1 {
  	flex-grow: .9;
 
  	p {
- 		font-family: 'Robot', sans-serif;
+ 		font-family: 'Roboto', sans-serif;
  		text-transform: uppercase;
  		font-weight: lighter;
  		font-size: 23px
@@ -96,10 +95,32 @@ h1 {
 		text-align: center;
 		a {
 			width: 100%;
-			padding: 20px ;
-
-
+			padding: 20px;
 		}
+	}
+
+	.shows {
+		padding-bottom: 0;
+
+		.showsContent {
+			padding: 20px 0;
+
+			.row {
+				padding-bottom: 0;
+			}
+
+			h1 {
+				padding-left: 0px;
+			}
+
+			h3.date, .showName {
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+	.location {
+		width: 100%;
 	}
 
 }

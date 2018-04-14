@@ -64,10 +64,10 @@ layout: null
 					<h1>Upcoming Shows</h1>
 					{% for show in site.data.shows %}
 					<div class="row row1">
-						<h3>{{ show.date }}</h3>
+						<h3 class="date">{{ show.date }}</h3>
 						<div class="location">
-							<p>{{ show.name }}</p>
-							<p>{{ show.venue }} • {{ show.city }}</p>
+							<p class="showName">{{ show.name }}</p>
+							<p class="venue">{{ show.venue }} • {{ show.city }}</p>
 						</div>
 						<a href="{{ show.rsvp }}">RSVP</a>
 						<a href="{{ show.tickets }}">Tickets</a>
@@ -89,11 +89,13 @@ layout: null
 					</div>
 					<div class="videoText">
 						<h2>{{ video.title }}</h2>
-						{% for description in video.descriptions %}
-						<p>
-							{{ description }}
-						</p>
-						{% endfor %}
+						<div class="descriptions">
+							{% for description in video.descriptions %}
+							<p class="description">
+								{{ description }}
+							</p>
+							{% endfor %}
+						</div>
 					</div>
 				</div>
 				{% endfor %}

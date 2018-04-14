@@ -57,7 +57,7 @@
 		padding: 20px;
 		text-decoration: none;
 		color: white;
-		font-family: 'Crimson Text', serif;
+		font-family: 'Roboto', sans-serif;
 		letter-spacing: 5px;
 		transition: all 1s;
 	}
@@ -85,8 +85,13 @@
 		}
 	}
 
-	.musicText, .albumArt{
+	.musicText {
 		width: 100%;
 		padding: 0;
+	}
+
+	.albumArt {
+		width: 100%;
+		padding: 50px 0 0 0;
 	}
 }
