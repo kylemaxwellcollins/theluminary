@@ -98,7 +98,12 @@ nav a:hover {
 }
 
 @media (max-width: 1020px) {
-	.menu a, .social a {
+
+	.social {
+		padding-right: 30px;
+	}
+
+	.social a {
 		padding: 0 5px;
 	}
 
