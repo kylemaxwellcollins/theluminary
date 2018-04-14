@@ -23,7 +23,7 @@ header {
 }
 
 .fa-bars {
-	margin-left: 10px; 
+	margin-left: 10px;
 	color: white;
 	display: none;
 }
@@ -44,14 +44,14 @@ nav {
 }
 
 .menu a, .social a {
-	padding: 0 15px; 
+	padding: 0 15px;
 }
 
 
 nav a {
 	text-decoration: none;
 	color: white;
-	transition: color 0.8s; 
+	transition: color 0.8s;
 }
 
 nav a:hover {
@@ -73,7 +73,7 @@ nav a:hover {
 		font-size: 50px;
 		transform: scaleY(1.5);
 		// text-shadow:
-		//    -1px -1px 0 rgba(0,0,0,0.5),  
+		//    -1px -1px 0 rgba(0,0,0,0.5),
 		//     1px -1px 0 rgba(0,0,0,0.5),
 		//     -1px 1px 0 rgba(0,0,0,0.5),
 		//      1px 1px 0 rgba(0,0,0,0.5);
@@ -99,13 +99,13 @@ nav a:hover {
 
 @media (max-width: 1020px) {
 	.menu a, .social a {
-		padding: 0 5px; 
+		padding: 0 5px;
 	}
 
 	nav.logo {
 		width: 100px;
 	}
-}	
+}
 
 
 @media (max-width: 770px) {
@@ -181,24 +181,3 @@ nav a:hover {
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

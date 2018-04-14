@@ -4,13 +4,14 @@
 
 .videoWrapper {
 	margin: 0 auto;
+	padding-bottom: 40px;
 	width: 95%;
 }
 
 .videoContent {
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 0;
+	// padding: 40px 0;
 }
 
 
@@ -66,14 +67,3 @@
 		width: 100%;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
