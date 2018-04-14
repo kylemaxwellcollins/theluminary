@@ -20,8 +20,10 @@ scripts/setup_jekyll
 ```
 
 ### Serving with LiveReload
-To see your changes in a browser, run the script `serve_jekyll.sh` by executing in Terminal the following:
+To see your changes in a browser, run the script `serve_jekyll.sh` by executing in Terminal the following (and leave open):
 
 ```sh
 scripts/serve_jekyll
 ```
+
+Open your browser and go to http://127.0.0.1:4000.
