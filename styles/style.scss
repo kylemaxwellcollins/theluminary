@@ -2,8 +2,59 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+$bg-dark: rgb(20, 20, 20);
+$bg-light: rgb(255, 255, 255);
+
+// Not sure if these kind of global settings should go in setup instead
+section, footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22.5px;
+  transition: all 1s;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: lighter;
+}
+
+h1.sectionTitle {
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  padding: 0 0 20px 0;
+  width: 50%;
+  margin: 0 auto 20px auto;
+}
+
+.lightSection {
+  background-color: $bg-light;
+  color: black;
+
+  h1.sectionTitle {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.darkSection {
+  background-color: $bg-dark;
+  color: white;
+
+  h1.sectionTitle {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
 @import "partials/setup";
 @import "partials/header";
+@import "partials/footer";
 @import "partials/shows";
 @import "partials/videos";
 @import "partials/music";

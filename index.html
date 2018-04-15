@@ -5,6 +5,7 @@ layout: null
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +23,7 @@ layout: null
 	<meta name="msapplication-TileColor" content="#2b5797">
 	<meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
 
 	<!-- HEADER STARTS -->
@@ -34,6 +36,7 @@ layout: null
 				<img class="logo" src="Images/Logo.png" alt="The Luminary logo">
 			</div>
 			<ul class="menu">
+				<!-- <li><a href="#bio">Bio</a></li> -->
 				<li><a href="#shows">Shows</a></li>
 				<li><a href="#videos">Videos</a></li>
 				<li><a href="#music">Music</a></li>
@@ -58,10 +61,10 @@ layout: null
 
 	<main>
 		<!-- SHOWS SECTION -->
-		<section class= "shows" id="shows">
+		<section class="lightSection shows" id="shows">
 			<div class="wrapper">
 				<div class="showsContent">
-					<h1>Upcoming Shows</h1>
+					<h1 class="sectionTitle">Upcoming Shows</h1>
 					{% for show in site.data.shows %}
 					<div class="row row1">
 						<h3 class="date">{{ show.date }}</h3>
@@ -78,8 +81,9 @@ layout: null
 		</section>
 
 		<!-- VIDEO SECTION -->
-		<section class="videos" id="videos">
+		<section class="darkSection videos" id="videos">
 			<div class="videoWrapper">
+				<h1 class="sectionTitle">Videos</h1>
 				{% for video in site.data.videos %}
 				<div class="videoContent">
 					<div class="videoContainer">
@@ -102,12 +106,15 @@ layout: null
 			</div>
 		</section>
 
-    <!-- MUSIC SECTION -->
-		<section id="music" class="music">
+		<!-- MUSIC SECTION -->
+		<section class="darkSection music" id="music">
 			<div class="musicWrapper">
-				<div class="musicContent">
+				<h1 class="sectionTitle">Music</h1>
+				<!-- Flow State -->
+				<div class="musicContent" id="flowState">
 					<div class="musicText">
-						<h2>flow state ep</h2>
+						<h2>Flow State EP</h2>
+						<h3 class="releaseYear">(2017)</h3>
 						<ol>
 							<li><a href="https://theluminary.bandcamp.com/track/isolated">Isolated</a></li>
 							<li><a href="https://theluminary.bandcamp.com/track/silent-sentry">Silent Sentry</a></li>
@@ -120,16 +127,58 @@ layout: null
 						<img src="Images/digitalcovertest-YouTube-banner.jpg" alt="Flow State album art">
 					</div>
 				</div>
+				<!-- Cycles -->
+				<div class="musicContent" id="cycles">
+					<div class="musicText">
+						<h2>Cycles (Single)</h2>
+						<h3 class="releaseYear">(2016)</h3>
+						<ol>
+							<li><a href="https://theluminary.bandcamp.com/track/cycles">Cycles</a></li>
+						</ol>
+					</div>
+					<div class="albumArt">
+						<img src="Images/Cycles.jpg" alt="Flow State album art">
+					</div>
+				</div>
+				<!-- Collective Unconscious -->
+				<div class="musicContent" id="collectiveUnconscious">
+					<div class="musicText">
+						<h2>Collective Unconscious EP</h2>
+						<h3 class="releaseYear">(2015)</h3>
+						<ol>
+							<li><a href="https://theluminary.bandcamp.com/track/sorry">Sorry</a></li>
+							<li><a href="https://theluminary.bandcamp.com/track/reclaim-reform">Reclaim, Reform</a></li>
+							<li><a href="https://theluminary.bandcamp.com/track/bitter">Bitter</a></li>
+							<li><a href="https://theluminary.bandcamp.com/track/asleep">Asleep</a></li>
+							<li><a href="https://theluminary.bandcamp.com/track/awake">Awake</a></li>
+							<li><a href="https://theluminary.bandcamp.com/track/invariance">Invariance</a></li>
+						</ol>
+					</div>
+					<div class="albumArt">
+						<img src="Images/CollectiveUnconsciousEP.jpg" alt="Flow State album art">
+					</div>
+				</div>
 			</div>
 		</section>
 
 	</main>
 
-	<footer>
+	<footer class="darkSection" id="footer">
+		<h1 class="sectionTitle">Connect</h1>
+		<div class="social">
+			<a class="facebook" href="https://www.facebook.com/theluminaryband/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a class="instagram" href="https://www.instagram.com/theluminaryband/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a class="spotify" href="https://open.spotify.com/artist/6rYiuq9UagagePoJApgYQj" target="_blank"><i class="fab fa-spotify"></i></a>
+			<a class="bandcamp" href="https://theluminary.bandcamp.com/" target="_blank"><i class="fab fa-bandcamp"></i></a>
+			<a class="twitter" href="https://twitter.com/theluminaryband" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a class="mail" href="mailto:theluminaryband@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+		</div>
+		<p class="stamp">The Luminary // {{ site.time | date: '%Y' }}</p>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="main.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
+
 </html>

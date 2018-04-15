@@ -1,6 +1,6 @@
 header {
 	background: url(../Images/FlowStateEP.jpg);
-	min-height: 100vh;
+	min-height: 100vmin;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -41,14 +41,13 @@ nav {
 		width: 350px;
 		padding: 0 30px;
 	}
+	.social a {
+		padding: 0 30px 0 0;
+	}
 }
 
 .menu a {
 	padding-left: 30px;
-}
-
-.social a {
-	padding: 0 30px 0 0;
 }
 
 
@@ -99,12 +98,14 @@ nav a:hover {
 
 @media (max-width: 1020px) {
 
-	.social {
-		padding-right: 30px;
-	}
+	nav {
+		.social {
+			padding-right: 30px;
+		}
 
-	.social a {
-		padding: 0 5px;
+		.social a {
+			padding: 0 5px;
+		}
 	}
 
 	nav.logo {
@@ -120,16 +121,15 @@ nav a:hover {
 		justify-content: center;
 		align-items: center;
 		position: fixed;
-	}
 
-	nav .logo {
-		width: 280px;
-	}
+		.social {
+			display: none;
+		}
 
-	.social {
-		display: none;
+		.logo {
+			width: 280px;
+		}
 	}
-
 
 	.fa-bars {
 		display: block;

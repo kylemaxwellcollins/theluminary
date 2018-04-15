@@ -8,21 +8,17 @@
 	background-size: cover;
 	background-position: bottom;
 	padding: 50px 0;
+
+	h1.sectionTitle {
+		width: 100%;
+	}
+
 	.showsContent {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		padding-bottom: 30px
 	}
-}
-
-h1 {
-	font-family: 'Roboto', sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 22.5px;
-	transition: all 1s;
-	padding-left: 45px;
 }
 
 .row {
@@ -100,7 +96,7 @@ h1 {
 	}
 
 	.shows {
-		padding-bottom: 0;
+		padding: 10px 0;
 
 		.showsContent {
 			padding: 20px 0;
