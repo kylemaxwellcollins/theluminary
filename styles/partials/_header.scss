@@ -1,6 +1,6 @@
 header {
 	background: url(../Images/FlowStateEP.jpg);
-	min-height: 100vh;
+	min-height: 100vmin;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -23,7 +23,7 @@ header {
 }
 
 .fa-bars {
-	margin-left: 10px; 
+	margin-left: 10px;
 	color: white;
 	display: none;
 }
@@ -39,19 +39,22 @@ nav {
 	z-index: 10;
 	.logo {
 		width: 350px;
-		padding: 0 15px;
+		padding: 0 30px;
+	}
+	.social a {
+		padding: 0 30px 0 0;
 	}
 }
 
-.menu a, .social a {
-	padding: 0 15px; 
+.menu a {
+	padding-left: 30px;
 }
 
 
 nav a {
 	text-decoration: none;
 	color: white;
-	transition: color 0.8s; 
+	transition: color 0.8s;
 }
 
 nav a:hover {
@@ -72,11 +75,7 @@ nav a:hover {
 		letter-spacing: 8px;
 		font-size: 50px;
 		transform: scaleY(1.5);
-		// text-shadow:
-		//    -1px -1px 0 rgba(0,0,0,0.5),  
-		//     1px -1px 0 rgba(0,0,0,0.5),
-		//     -1px 1px 0 rgba(0,0,0,0.5),
-		//      1px 1px 0 rgba(0,0,0,0.5);
+		padding-left: 0;
 	}
 	a {
 		background: rgba(0,0,0,0.5);
@@ -98,14 +97,21 @@ nav a:hover {
 }
 
 @media (max-width: 1020px) {
-	.menu a, .social a {
-		padding: 0 5px; 
+
+	nav {
+		.social {
+			padding-right: 30px;
+		}
+
+		.social a {
+			padding: 0 5px;
+		}
 	}
 
 	nav.logo {
 		width: 100px;
 	}
-}	
+}
 
 
 @media (max-width: 770px) {
@@ -115,16 +121,15 @@ nav a:hover {
 		justify-content: center;
 		align-items: center;
 		position: fixed;
-	}
 
-	nav .logo {
-		width: 280px;
-	}
+		.social {
+			display: none;
+		}
 
-	.social {
-		display: none;
+		.logo {
+			width: 280px;
+		}
 	}
-
 
 	.fa-bars {
 		display: block;
@@ -167,38 +172,20 @@ nav a:hover {
 
 	.title {
 		justify-content: flex-end;
-		padding-bottom: 40px;
-		padding: 0 40px 40px;
+		padding: 10px 0 40px 0;
+
 		h1 {
-			font-size: 35px;
+			font-size: 20px;
+			text-align: center;
+			padding-left: 0;
+			margin: 0 auto;
 		}
 
 		a{
 			font-size: 14px;
 			padding: 10px;
-			margin-top: 30px;
+			margin: 30px auto 0 auto;
 		}
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

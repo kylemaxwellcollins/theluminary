@@ -1,15 +1,29 @@
 .music {
-	background: url(../Images/FlowStateEP-Blur.jpg);
 	min-height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: top;
+	background: url(../Images/FlowStateEP-Blur.jpg);
+	padding-bottom: 0;
+}
+
+.music #flowState {
+	// Use default image from above
+}
+
+.music #collectiveUnconscious {
+	background: url(../Images/CollectiveUnconsciousEP-Blur.jpg);
+	background-position: left;
+}
+
+.music #cycles {
+	background: url(../Images/Cycles-Blur.jpg);
+	background-position: right;
 }
 
 .musicWrapper {
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
-
 }
 
 .musicContent {
@@ -17,6 +31,7 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 100vh;
+	padding: 0 40px;
 }
 
 .musicText, .albumArt {
@@ -26,12 +41,17 @@
 .musicText {
 	padding-left: 10%;
 	color: white;
-	h2{
+	h2 {
 		text-transform: uppercase;
 		font-family: 'Oswald', sans-serif;
 		transform: scaleY(1.4);
 		letter-spacing: 8px;
 		font-size: 50px;
+	}
+
+	h3 {
+		font-family: 'Oswald', sans-serif;
+		color: rgba(255, 255, 255, 0.4)
 	}
 
 	ol {
@@ -55,7 +75,8 @@
 
 	a {
 		padding: 20px;
-		text-decoration: none;
+		text-decoration: underline dotted;
+		text-decoration-color: rgba(255, 255, 255, 0.3);
 		color: white;
 		font-family: 'Crimson Text', serif;
 		letter-spacing: 5px;
@@ -80,32 +101,22 @@
 			text-align: center;
 		}
 
+		h3 {
+			text-align: center;
+		}
+
 		ol li {
 			text-align: center;
 		}
 	}
 
-	.musicText, .albumArt{
+	.musicText {
 		width: 100%;
 		padding: 0;
 	}
+
+	.albumArt {
+		width: 100%;
+		padding: 50px 0 0 0;
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
